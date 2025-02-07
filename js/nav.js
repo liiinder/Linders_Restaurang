@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     <a class="nav-link active" aria-current="page" href="index.html">Hem</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="about.html">Om Oss</a>
+    <a class="nav-link" href="html/about.html">Om Oss</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="menu.html">Meny</a>
+    <a class="nav-link" href="html/menu.html">Meny</a>
   </li>
 </ul></div></nav>`;
 
