@@ -3,14 +3,14 @@
 
 De vill ha en hemsida med tre delar. Navigation ska ske genom en navbar eller liknande menysystem.
 
-Den första delen är en landningssida där man ska kunna se företagets namn en passande bild och en passande välkomsttext.
 </a>
+<a style="color : green">Den första delen är en landningssida där man ska kunna se företagets namn en passande bild och en passande välkomsttext.
 
 Den andra delen är en "Om Oss"-sida där man ska kunna läsa om företaget, kontaktuppgifter och address.
+<br>Den tredje delen ska lista företagets tjänster/produkter. Dessa ska listas på ett snyggt sätt med hjälp av en JavaScript-array. Varje tjänst/produkt ska ha en passande bild. </a>
+Här ska också finnas någon enkel form av kundvagn.
 
-Den tredje delen ska lista företagets tjänster/produkter. Dessa ska listas på ett snyggt sätt med hjälp av en JavaScript-array. Varje tjänst/produkt ska ha en passande bild. Här ska också finnas någon enkel form av kundvagn.
-
-Uppdraget innebär ett ta fram en prototyp åt företaget och måste inte innehålla någon specifik text eller exakta kontaktuppgifter.
+<a style="color:gray">Uppdraget innebär ett ta fram en prototyp åt företaget och måste inte innehålla någon specifik text eller exakta kontaktuppgifter.</a>
 
 ## Förslag på företag
 
@@ -20,7 +20,7 @@ Uppdraget innebär ett ta fram en prototyp åt företaget och måste inte inneh�
 </a>
 - <a style="color : gray">Florist - Produkter som olika arrangemang, buketter eller liknande.
 - Städfirma - Tjänster för tex hemstäd, fönstertvätt, garagerensning osv.
-- Hunddagis - Tjänster som tex kloklipp, pälsvård osv.<a/>
+- Hunddagis - Tjänster som tex kloklipp, pälsvård osv.</a>
 
 # Bedömning
 
