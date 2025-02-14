@@ -48,7 +48,7 @@ food.forEach((item) => {
         <div class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${item.id}" aria-expanded="false" aria-controls="${item.id}">
                 <div>
-                    <image src="/Linders_Restaurang/images/${item.image}.webp" alt="Bild på en ${item.title}"></image>
+                    <image src="/Linders_Restaurang/images/${item.image}.webp" alt="Bild på en ${item.title}" width="600px" height="300px"></image>
                     <div class="d-flex justify-content-between">
                         <h2 class="text-center">${item.title}</h2>
                         <h2 class="text-right">${item.price}kr</h2>
