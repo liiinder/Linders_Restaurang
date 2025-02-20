@@ -30,12 +30,12 @@ Här ska också finnas någon enkel form av kundvagn.</a>
 - <a style="color : green">Sidan är uppdelad på ett strukturerat sätt med minst tre HTML- och CSS-filer.</a>
 - <a style="color : green">Sidorna uppnår minst 80% i Lighthouse på Best Practices i både Mobile och Desktop</a>
 - <a style="color : green">Hemsidan nyttjar minst två typsnitt.</a>
-- Hemsidan har ett färsgschema med minst 3 färger (utöver vitt och svart).
+- <a style="color : green">Hemsidan har ett färsgschema med minst 3 färger (utöver vitt och svart).</a>
 - <a style="color : green">Sidorna nyttjar Bootstrap (eller liknande css-bibliotek).</a>
 - <a style="color : green">På sidan "Om Oss" Ska adressen visas i en inbakad Google Maps-modul.</a>
 
 ### Krav för VG
-- Alla krav för G är uppfyllda.
-- Det ska finnas anrop till minst ett öppet API för att hämta intressant information. (tex väder, valuta-kurser eller annat som är relevant för sidan) Här finns publika apier
+- <a style="color : green">Alla krav för G är uppfyllda.</a>
+- <a style="color : green">Det ska finnas anrop till minst ett öppet API för att hämta intressant information. (tex väder, valuta-kurser eller annat som är relevant för sidan) Här finns publika apier</a>
 - <a style="color : green">Alla produkter/tjänster i listan (ej kundvagnen) ska kunna expanderas för att visa mer detaljerad information. Detta kan göras t.ex. med hjälp av Modaler (Tips: Modal finns som komponent i Bootstrap)</a>
 - <a style="color : green">Utöver detta så ska Performance, Accessability och Best Practices alla vara över 90% i Lighthouse på Desktop och Mobile.</a>

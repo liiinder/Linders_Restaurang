@@ -24,3 +24,50 @@ function removeFadeOut( el, speed ) {
 }
 
 map.addEventListener ('mouseover', maplistner);
+
+let welcomeMessage = document.getElementById("welcome-message");
+const welcome = "Välkommen hem till mig! Vi är ett nystartat företag som fokuserar på personlighet och en hemtrevlig känsla direkt från lägenheten i Bohus. Det serveras hemmagjord pizza på bästa sätt direkt från ugnen till tallriken.";
+let temperature = "";
+
+async function getWeather(){
+    const url = "https://api.open-meteo.com/v1/forecast?latitude=57.8437&longitude=12.017&current=temperature_2m";
+    try {
+        const response = await fetch(url);
+        if (!response.ok){
+            throw new Error(`Response status: ${response.status}`);
+        }
+        const json = await response.json();
+        const temp = json.current.temperature_2m;
+
+        switch (true) {
+            case temp < -30:
+                temperature = `Det är sjukt jävla kallt ute (${temp}°), vi har tokstängt!`;
+                break;
+            case temp < -10:
+                temperature = `Det är sjukt kallt ute (${temp}°), men så kanske bättre att vänta?!`;
+                break;
+            case temp <= 5:
+                temperature = `Det är ${temp}° ute, lite kallt men det kanske kan fungera ändå?!`;
+                break;
+            case temp < 15:
+                temperature = `Det är ${temp}° ute, ta med en tröja så blir det trevligt!`;
+                break;
+            case temp < 25:
+                temperature = `Det är ${temp}° varmt ute! Helt perfekt!`;
+                break;
+            case temp < 35:
+                temperature = `Det är ${temp}° grader ute, frysen är full med is så det är bara komma förbi!`;
+                break;
+            case temp >= 35:
+                temperature = `Det är ${temp}° ute, ta med flera ombyte! Men kanske bättre vi drar och badar istället?!`;
+                break;
+        }
+
+        welcomeMessage.innerHTML = `${welcome} ${temperature}`;
+
+    } catch (error) {
+        console.error(error.message);
+    }
+}
+
+getWeather();

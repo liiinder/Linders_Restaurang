@@ -82,18 +82,12 @@ food.forEach(item => {
 function addItem(item, addItem) {
     let fooditem = food.find(i => i.id === item.id);
 
-    if (addItem) {
-        fooditem.inBasket++;
-    } else {
-        fooditem.inBasket--;
-    }
-    
+    addItem ? fooditem.inBasket++ : fooditem.inBasket--;
+
     let summa = calculateSum();
     if (summa == 0) {
         varukorg.innerHTML = "Beställ gärna lite mat!";
     } else {
-        console.log(summa);
-        
         varukorg.innerHTML = "";
         food.forEach(item => {
             if (item.inBasket > 0)
@@ -112,7 +106,7 @@ function addItem(item, addItem) {
                     tot: ${item.inBasket * item.price} kr
                 </div>
                 `
-    
+
                 varukorg.insertAdjacentHTML("beforeend", varukorghtml);
             }
         });
