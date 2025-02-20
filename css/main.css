@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -8,4 +10,18 @@ body > .container {
 
 td {
     min-width: 2rem;
+}
+
+.logo {
+    font-family: "Babylonica", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+}
+
+footer {
+    margin-top: 0.4em;
+    padding: 0em;
+    text-align: center;
+    background: linear-gradient(110deg, #006aa7 8%, #fecc02 calc(8% + 1px), #fecc02 12%, #006aa7 calc(12% + 1px), #006aa7 20%, #2B3035 calc(20% + 1px), #2B3035 100%);
 }
